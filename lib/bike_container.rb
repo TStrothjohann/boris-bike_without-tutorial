@@ -22,6 +22,7 @@ module BikeContainer
 	end
 
 	def release(bike)
+
 		bikes.delete(bike)
 	end
 
@@ -33,4 +34,15 @@ module BikeContainer
 		@bikes.reject {|bike| bike.broken? }
 	end 
 
+	def broken_bikes
+		@bikes.select {|bike| bike.broken? }	
+	end
+
+	def release_broken_bikes
+		@bikes.each {|bike| bike.broken?; release(bike)}
+		
+	end
+
 end
+
+
