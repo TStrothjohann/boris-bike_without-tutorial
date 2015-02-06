@@ -6,11 +6,7 @@ class Van
 		self.capacity = options.fetch(:capacity, capacity)
 	end
 	
-	def get_broken_bikes_from(station)
-		
-		self.dock(station.broken_bikes)
-		station.release_broken_bikes
-	end
+
 
  
 end
