@@ -1,5 +1,5 @@
-require ‘van’
-require ‘docking_station’
-require ‘garage’
-require ‘bike’
-require ‘bike_container’
+require './lib/van'
+require './lib/docking_station'
+require './lib/garage'
+require './lib/bike'
+require './lib/bike_container'
